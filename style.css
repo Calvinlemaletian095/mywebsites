@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 150px;
+    width: 150px;
+    clip-path: circle();
+    }
+.container{
+    display: flex;
+    padding-right: 700px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+     margin: 0 15px;
+     box-shadow: 0 4px 8px rgba(0,0,0.2);
+     list-style: none;
+}
+main{
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpg);
+    background-position: center;
+    background-size:auto;
+    height:auto;
+
+}
+.Navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.Icon{
+    float: left;
+    height: 70px;
+}
+.Logo{
+
+    color: #ff004f;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    padding-left: 10px;
+    float:left;
+    padding-top: 10px;
+}
+.icon h2{
+    color: #ff004f;
+}
+.Menu{
+    width: 400px;
+    float:left;
+    height: 70px;
+    padding-left: 400px;
+}
+ul{
+    float:left;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+ul li{
+    list-style:none;
+    margin-left:100px;
+    margin-top:27px;
+    font-size:14px;
+    word-spacing: 1px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--1));
+}
+ul li a{
+    text-decoration: none;
+    color: #0ef;
+    font-family: arial;
+    font-weight: bold;
+    transition:0.4s ease-in-out;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+ul li a:hover::after{
+    width: 100%;
+}
+p{
+    color: white;
+    text-align: center;
+}
+body {
+    height: 1000vh;
+    background-image:url(lii.png);
+}
+form{
+    display: flex;
+    padding-left: 1120px;
+    cursor: pointer;
+    color: orangered;
+}
+h1{
+    color: white;
+    padding-right: 900px;
+    font-weight: bold;
+}
+button{
+    background-color: green;
+}
+u{
+    color: white;
+    word-spacing:30px ;
+}
+@keyframes slideTop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
